@@ -53,7 +53,9 @@ p {
 #random-btn {
   margin: 0 auto 10px auto;
   display: block;
-  background: linear-gradient(90deg, #5a6fff 0%, #7092ff 100%);
+  background: linear-gradient(270deg, #5a6fff, #7092ff);
+  background-size: 400% 400%;
+  animation: sparkleWave 8s ease infinite;
   color: #fff;
   border: none;
   border-radius: 24px;
@@ -77,10 +79,12 @@ p {
 }
 
 #recipe-display {
+  position: relative;
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(70,100,220,0.06);
+  box-shadow: 0 4px 12px rgba(70, 100, 220, 0.1);
   padding: 24px;
+  overflow: hidden;
 }
 #recipe-display img {
   width: 100%;
